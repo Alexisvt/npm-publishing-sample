@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d build",
-    "watch": " onchange \"src/**/*.js\" -- npm run build"
+    "dev": " onchange \"src/**/*.js\" -- npm run build"
   },
   "babel": {
     "presets": [
       "env"
     ]
+  },
+  "quokka": {
+    "babel": true
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
     "babel-cli": "^6.24.0",
     "babel-preset-env": "^1.2.2",
     "eslint": "^3.18.0",
+    "jest": "^19.0.2",
     "onchange": "^3.2.1"
   }
 }
