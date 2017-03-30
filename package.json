@@ -1,0 +1,36 @@
+{
+  "name": "npm-publishing-sample",
+  "version": "1.0.0",
+  "description": "A simple sample app to learn how to publish javascript packages on npm",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "watch": " onchange \"src/**/*.js\" -- npm run build"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexisvt/npm-publishing-sample.git"
+  },
+  "keywords": [
+    "sample",
+    "publish"
+  ],
+  "author": "Alexis Villegas Torres (http://es-devschool.teachable.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexisvt/npm-publishing-sample/issues"
+  },
+  "homepage": "https://github.com/Alexisvt/npm-publishing-sample#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "eslint": "^3.18.0",
+    "onchange": "^3.2.1"
+  }
+}
