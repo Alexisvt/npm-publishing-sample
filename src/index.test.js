@@ -2,15 +2,15 @@
 const { sensitiveWords } = require('.');
 
 test('replace words', () => {
-  expect(sensitiveWords('hello alexis', ['alexis'])).toBe('hello ***');
+  expect(sensitiveWords('hello alexis', ['alexis'])).toBe('hello ****');
 });
 
 test('replace multiple blacklisted words', () => {
   expect(sensitiveWords('hello alexis, alexis is awesome', ['alexis']))
-    .toBe('hello ***, *** is awesome');
+    .toBe('hello ****, **** is awesome');
 });
 
 test('replace multiple different blacklisted words', () => {
   expect(sensitiveWords('hello alexis david, alexis david is awesome', ['alexis', 'david']))
-    .toBe('hello *** ***, *** *** is awesome');
+    .toBe('hello **** ****, **** **** is awesome');
 });

@@ -7,7 +7,9 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "build": "babel src -d build",
-    "dev": " onchange \"src/**/*.js\" -- npm run build"
+    "dev": " onchange \"src/**/*.js\" -- npm run build",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "babel": {
     "presets": [

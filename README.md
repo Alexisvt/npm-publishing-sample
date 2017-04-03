@@ -1,7 +1,7 @@
 # Example
 
 ```shell
-> npm install npm-publishing-sample --save-dev
+> npm install npm-publishing-sample --save
 ```
 
 How to use it
