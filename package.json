@@ -1,6 +1,6 @@
 {
   "name": "npm-publishing-sample",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple sample app to learn how to publish javascript packages on npm",
   "main": "build/index.js",
   "scripts": {
