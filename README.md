@@ -1,8 +1,15 @@
-# Sample about how to publish javascript package on npm
+# Example
 
-Steps to create a package
+```shell
+> npm install npm-publishing-sample --save-dev
+```
 
-1. Create a git repo and inside of it
-1. Create a node package using `npm init`
-1. Define the value for the `main` property inside the package.json
-1. Make sure to install on the `dependency` property only the stuff that the app need
+How to use it
+
+```javascript
+const { sensitiveWords } = require('npm-publishing-sample');
+
+const response = sensitiveWords('alexis is awesome', ['alexis']);
+
+console.log(response); // *** is awesome
+```
