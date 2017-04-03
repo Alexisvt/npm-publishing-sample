@@ -1,9 +1,11 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
 exports.default = function () {
-  return "hola mundo otra vez!";
+  var content = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var words = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+  return content.replace(new RegExp(words.join('|'), 'ig'), '***');
 };
